@@ -1,6 +1,6 @@
 ### Hi there, I'm Duvindu Dinethmin Devendra! 👋
 
-- 👀 I'm passionate about coding and all things tech.
+- 👀 I'm a passionate ICT undergrad 🎓, coding enthusiast.
 - 🎮 When I'm not coding, you'll find me gaming and exploring virtual worlds.
 - 🌱 Currently, I'm learning and growing as a developer.
 - 💞️ I'm open to collaborating on exciting projects and expanding my network.
