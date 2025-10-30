@@ -63,7 +63,7 @@
   <a href="mailto:duvindudinethmin123@gmail.com">
     <img src="https://img.shields.io/badge/Email-duvindudinethmin123@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
   </a>
-  <a href="[https://www.linkedin.com/in/YOUR_USERNAME/](https://www.linkedin.com/in/duvindu-dinethmin-29898224a)">
+<a href="https://www.linkedin.com/in/duvindu-dinethmin-29898224a">
     <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
   </a>
 
