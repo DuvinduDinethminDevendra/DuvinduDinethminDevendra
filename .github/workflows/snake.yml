@@ -12,8 +12,7 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     
-    # *** THIS IS THE FIX ***
-    # Add this permissions block to allow the action to write to the branch
+    # This gives the action permission to write to the 'output' branch
     permissions:
       contents: write
     
@@ -21,13 +20,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      # *** THIS IS THE NEW FIX ***
+      # We must manually create the 'dist' directory
+      - name: Create output directory
+        run: mkdir dist
+
       - name: Generate snake animation
         uses: Platane/snk@v3
         with:
           # Your GitHub username
           github_user_name: DuvinduDinethminDevendra
           
-          # The output file for the snake SVG
+          # Tell the snake action to save the file inside the new 'dist' directory
           svg_out_path: dist/github-contribution-grid-snake.svg
           
           # Use the 'tokyonight' theme to match your stats cards
@@ -36,7 +40,7 @@ jobs:
       - name: Deploy to output branch
         uses: crazy-max/ghaction-github-pages@v3
         with:
-          # The directory containing the generated SVG
+          # The directory to deploy
           target_branch: output
           build_dir: dist
         env:
