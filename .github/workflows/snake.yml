@@ -23,14 +23,14 @@ jobs:
       - name: Generate snake animation
         uses: Platane/snk@v3
         with:
-          github_user_name: DuvinduDinethminDevendra
+          github_user_name: B.D.D.Devendra
           
           # THIS IS THE CORRECT SYNTAX
           # All options go inside the 'outputs' string, separated by '&'
           # 'theme=tokyonight' = The dark background you want
           # 'color_snake=green' = The green snake you requested
           outputs: |
-            dist/github-contribution-grid-snake.svg?theme=tokyonight&color_snake=green
+            dist/github-contribution-grid-snake.svg?color_bg=0d1117&color_snake=green
 
       - name: Deploy snake file to 'output' branch
         # This is the deploy action that works
