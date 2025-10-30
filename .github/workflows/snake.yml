@@ -12,6 +12,11 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     
+    # *** THIS IS THE FIX ***
+    # Add this permissions block to allow the action to write to the branch
+    permissions:
+      contents: write
+    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
