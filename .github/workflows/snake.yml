@@ -12,7 +12,7 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     
-    # Fix 1: Add permissions for writing to the branch
+    # This gives the action permission to write to the repo
     permissions:
       contents: write
     
@@ -20,33 +20,20 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Fix 2: Create the 'dist' directory before using it
-      - name: Create output directory
-        run: mkdir dist
-
       - name: Generate snake animation
+        # This uses the new, correct syntax for the snake action
         uses: Platane/snk@v3
         with:
-          # Your GitHub username
           github_user_name: DuvinduDinethminDevendra
           
-          # Tell the snake action to save the file inside the new 'dist' directory
-          svg_out_path: dist/github-contribution-grid-snake.svg
-          
-          # Use the 'tokyonight' theme to match your stats cards
-          theme: tokyonight
+          # This is the new, correct way to set the theme and output file
+          outputs: |
+            dist/github-contribution-grid-snake.svg?theme=tokyonight
 
-      # Fix 3: Use the original (and correct) deploy action
-      - name: Deploy to output branch
-        uses: crazy-max/ghaction-github-pages@v3
+      - name: Deploy snake file to 'output' branch
+        # This is a simple, reliable action for deploying files
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          # The directory to deploy
-          target_branch: output
-          build_dir: dist
-          
-          # Fix 4: Tell the action to NOT run Jekyll
-          jekyll: false
-          
-        env:
-          # A token is required to push to the output branch
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: output # The branch to push to
+          folder: dist   # The folder (dist) that contains our snake file
