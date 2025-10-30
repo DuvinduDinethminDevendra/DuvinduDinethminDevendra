@@ -45,7 +45,7 @@
 ## 🐍 My GitHub Snake Game
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/DuvinduDinethminDevendra/DuvinduDinethminDevendra/output/github-contribution-grid-snake.svg?v=11" alt="My GitHub Contribution Snake" />
+  <img src="https://raw.githubusercontent.com/DuvinduDinethminDevendra/DuvinduDinethminDevendra/output/github-contribution-grid-snake.svg?v=12" alt="My GitHub Contribution Snake" />
 </p>
 
 <br>
