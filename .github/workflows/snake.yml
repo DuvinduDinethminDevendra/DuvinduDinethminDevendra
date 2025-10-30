@@ -12,7 +12,7 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     
-    # This gives the action permission to write to the 'output' branch
+    # Give the action permissions to write to the repo
     permissions:
       contents: write
     
@@ -20,31 +20,23 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Create output directory
-        run: mkdir dist
-
       - name: Generate snake animation
         uses: Platane/snk@v3
         with:
-          # Your GitHub username
           github_user_name: DuvinduDinethminDevendra
-          
-          # Tell the snake action to save the file inside the new 'dist' directory
-          svg_out_path: dist/github-contribution-grid-snake.svg
-          
-          # Use the 'tokyonight' theme to match your stats cards
+          # Save the file directly in the root (no 'dist' folder)
+          svg_out_path: github-contribution-grid-snake.svg
           theme: tokyonight
 
-      - name: Deploy to output branch
-        uses: crazy-max/ghaction-github-pages@v3
+      - name: Push snake file to 'output' branch
+        # This is a new, simpler action that just pushes files
+        uses: ad-m/github-push-action@master
         with:
-          # The directory to deploy
-          target_branch: output
-          build_dir: dist
-          
-          # Tell the action to NOT run Jekyll
-          jekyll: false
-          
-        env:
-          # A token is required to push to the output branch
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # The branch to push to
+          branch: output
+          # Force push, since this branch will only ever have this one file
+          force: true
+          # The file to push
+          files: github-contribution-grid-snake.svg
+          # The GitHub token
+          github_token: ${{ secrets.GITHUB_TOKEN }}
