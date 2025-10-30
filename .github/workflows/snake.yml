@@ -1,5 +1,4 @@
 name: Generate Snake Animation
-
 on:
   # Run this action on a schedule (once every 6 hours)
   schedule:
@@ -7,7 +6,6 @@ on:
   
   # Allow running this action manually from the Actions tab
   workflow_dispatch:
-
 jobs:
   generate:
     runs-on: ubuntu-latest
@@ -19,25 +17,22 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-
+      
       - name: Generate snake animation
         uses: Platane/snk@v3
         with:
           github_user_name: DuvinduDinethminDevendra
-          
-          # *** THIS IS THE FIX ***
-          # We must pass the GITHUB_TOKEN so the action
-          # can see your full contribution graph.
           github_token: ${{ secrets.GITHUB_TOKEN }}
           
-          # This is our dark theme with a green snake
+          # Dark theme with custom colors
+          # Using a very dark background with bright green snake
           outputs: |
-            dist/github-contribution-grid-snake.svg?palette=github-dark&color_snake=green
-
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#00ff41&color_dots=#0d1117,#161b22,#1f6feb,#39d353,#39d353
+            dist/github-contribution-grid-snake.svg?palette=github-dark&color_snake=#00ff41&color_dots=#0d1117,#161b22,#1f6feb,#39d353,#39d353
+      
       - name: Deploy snake file to 'output' branch
-        # This is the deploy action that works
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          branch: output # The branch to push to
-          folder: dist   # The folder (dist) that contains our snake file
+          branch: output
+          folder: dist
