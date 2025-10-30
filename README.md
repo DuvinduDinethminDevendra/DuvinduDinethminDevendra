@@ -12,7 +12,7 @@
 * 🎓 I'm a passionate **ICT undergraduate**, diving deep into the world of technology.
 * 💻 I'm a coding enthusiast who loves building cool things and solving complex problems.
 * 🎮 When I'm not pushing pixels, you'll find me exploring virtual worlds and dominating the leaderboard.
-* 🌱 I'm currently learning **[Please add what you're learning, e.g., Next.js, AI/ML, etc.]** and always eager to grow.
+* 🌱 I'm currently learning **[nosql,game development, Next.js, AI/ML, etc.]** and always eager to grow.
 * 🤝 I'm open to **collaborating on exciting projects** and expanding my professional network.
 
 <br>
@@ -45,7 +45,7 @@
 ## 🐍 My GitHub Snake Game
 
 <p align="center">
-  <img src="https:raw.githubusercontent.com/DuvinduDinethminDevendra/DuvinduDinethminDevendra/output/github-contribution-grid-snake.svg?v=5" alt="My GitHub Contribution Snake" />
+  <img src="https:raw.githubusercontent.com/DuvinduDinethminDevendra/DuvinduDinethminDevendra/output/github-contribution-grid-snake.svg?v=6" alt="My GitHub Contribution Snake" />
 </p>
 
 <br>
