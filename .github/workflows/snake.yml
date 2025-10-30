@@ -1,0 +1,39 @@
+name: Generate Snake Animation
+
+on:
+  # Run this action on a schedule (once every 6 hours)
+  schedule:
+    - cron: '0 */6 * * *'
+  
+  # Allow running this action manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Generate snake animation
+        uses: Platane/snk@v3
+        with:
+          # Your GitHub username
+          github_user_name: DuvinduDinethminDevendra
+          
+          # The output file for the snake SVG
+          svg_out_path: dist/github-contribution-grid-snake.svg
+          
+          # Use the 'tokyonight' theme to match your stats cards
+          theme: tokyonight
+
+      - name: Deploy to output branch
+        uses: crazy-max/ghaction-github-pages@v3
+        with:
+          # The directory containing the generated SVG
+          target_branch: output
+          build_dir: dist
+        env:
+          # A token is required to push to the output branch
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
