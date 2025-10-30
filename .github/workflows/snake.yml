@@ -11,20 +11,20 @@ jobs:
       contents: write
     runs-on: ubuntu-latest
     timeout-minutes: 5
-    
+
     steps:
       - name: Generate snake game from GitHub contribution graph
-        uses: Platane/snk/svg-only@v3
+        uses: Platane/snk/svg-only@v2.3.0   # ← stays on v2 to avoid permission bug
         with:
           github_user_name: DuvinduDinethminDevendra
           outputs: |
             dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#00ff00&color_dots=#0d1117,#161b22,#006d32,#26a641,#39d353
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#00ff00
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
+
       - name: Push snake to GitHub Pages
-        uses: Platane/snk/svg-only@v2.3.0 
+        uses: crazy-max/ghaction-github-pages@v3   # ← correct pages action
         with:
           target_branch: output
           build_dir: dist
