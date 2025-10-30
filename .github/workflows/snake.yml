@@ -20,8 +20,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # *** THIS IS THE NEW FIX ***
-      # We must manually create the 'dist' directory
       - name: Create output directory
         run: mkdir dist
 
@@ -43,6 +41,10 @@ jobs:
           # The directory to deploy
           target_branch: output
           build_dir: dist
+          
+          # Tell the action to NOT run Jekyll
+          jekyll: false
+          
         env:
           # A token is required to push to the output branch
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
