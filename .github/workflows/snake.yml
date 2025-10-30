@@ -1,33 +1,41 @@
 name: Generate Snake Animation
 
 on:
+  # Run this action on a schedule (once every 6 hours)
   schedule:
     - cron: '0 */6 * * *'
+  
+  # Allow running this action manually from the Actions tab
   workflow_dispatch:
 
 jobs:
   generate:
     runs-on: ubuntu-latest
+    
+    # This gives the action permission to write to the repo
     permissions:
       contents: write
+    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-
-      - name: Create output directory
-        run: mkdir dist
 
       - name: Generate snake animation
         uses: Platane/snk@v3
         with:
           github_user_name: DuvinduDinethminDevendra
-          # Use gif_out_path for animated GIF
-          gif_out_path: dist/github-contribution-grid-snake.gif
           
-          # Custom background and dots using SVG parameters
+          # THIS IS THE CORRECT SYNTAX
+          # All options go inside the 'outputs' string, separated by '&'
+          # 'theme=tokyonight' = The dark background you want
+          # 'color_snake=green' = The green snake you requested
           outputs: |
-            dist/github-contribution-grid-snake.svg?
-            palette=github-dark&
-            background=00000000& # Transparent background (will blend with GitHub's dark mode)
-            color_snake=green& # Green snake
-            color_dots=#00FF00 # Bright green dots
+            dist/github-contribution-grid-snake.svg?theme=tokyonight&color_snake=green
+
+      - name: Deploy snake file to 'output' branch
+        # This is the deploy action that works
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: output # The branch to push to
+          folder: dist   # The folder (dist) that contains our snake file
