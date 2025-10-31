@@ -20,6 +20,7 @@ const duvindu = {
     location: "Sri Lanka 🇱🇰",
     education: "ICT Undergraduate",
     currentFocus: ["Next.js", "Game Development", "AI/ML"],
+    profession: "N fr GfyRfs", // Hint: 🔑 = <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="35"> 
     funFact: "I have beaten IGI 1 twice! 🧊",
     lifePhilosophy: "Code, Create, Conquer, Repeat 🔄"
 };
@@ -34,7 +35,7 @@ const duvindu = {
 
 <h2>
   <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="35"> 
-  Tech Arsenal
+  Tech Arsenal 
 </h2>
 
 <h3>Languages</h3>
