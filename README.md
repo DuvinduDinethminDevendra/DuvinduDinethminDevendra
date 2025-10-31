@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="600" alt="Typing GIF">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTExYzFwcXUwZzl1NW0ybnh0dnh2dmt6eDR2ZWE3MWpjYzRsenI3NCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Ws6T5PN7wHv3cY8xy8/giphy.gif" alt="Typing GIF">
 </p>
 
 <h1 align="center">Hi there, I'm 👋</h1>
