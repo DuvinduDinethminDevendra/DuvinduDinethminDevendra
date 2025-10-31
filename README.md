@@ -87,14 +87,24 @@ const duvindu = {
   <img width="49%" src="https://github-readme-activity-graph.vercel.app/graph?username=DuvinduDinethminDevendra&theme=react-dark&hide_border=true&area=true&bg_color=0D1117&color=36BCF7&line=36BCF7&point=FFFFFF" alt="Activity Graph"/>
 </p>
 
-<h2>
-  <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="35"> 
-  Contribution Snake
-</h2>
+<br>
+
+
+<p >
+
+  <img src="https://capsule-render.vercel.app/api?type=wave&color=0d1117&height=100&section=header&text=🎃%20Feeding%20the%20Commit%20Snake&fontSize=40&fontColor=36BCF7&animation=none" width="100%" />
+
+</p>
+
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/DuvinduDinethminDevendra/DuvinduDinethminDevendra/output/github-contribution-grid-snake-dark.svg" alt="Snake Animation" />
+
+  <img src="https://raw.githubusercontent.com/DuvinduDinethminDevendra/DuvinduDinethminDevendra/output/github-contribution-grid-snake.svg?v=13" alt="My GitHub Contribution Snake" />
+
 </p>
+
+
+<br>
 
 <h2>
   <img src="https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" width="35"> 
