@@ -71,49 +71,6 @@ const duvindu = {
   <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code">
 </p>
 
-<h2>
-  <img src="https://media.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif" width="35"> 
-  Featured Projects
-</h2>
-
-<table>
-<tr>
-<td width="50%">
-
-### 🚀 [Project Name 1](#)
-A comprehensive web application built with React and Node.js that solves [specific problem]. Features real-time updates, responsive design, and seamless user experience.
-
-**Tech Stack:** `React` `Node.js` `MongoDB` `Express`
-
-</td>
-<td width="50%">
-
-### 🎮 [Project Name 2](#)
-An interactive game developed using modern JavaScript frameworks. Includes multiplayer functionality, leaderboards, and engaging gameplay mechanics.
-
-**Tech Stack:** `JavaScript` `Three.js` `WebSocket`
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-### 💡 [Project Name 3](#)
-Full-stack e-commerce platform with payment integration, inventory management, and admin dashboard. Built with scalability in mind.
-
-**Tech Stack:** `Next.js` `Laravel` `MySQL` `Stripe`
-
-</td>
-<td width="50%">
-
-### 🔥 [Project Name 4](#)
-AI-powered recommendation system that uses machine learning to provide personalized suggestions. Trained on custom datasets.
-
-**Tech Stack:** `Python` `TensorFlow` `Flask` `React`
-
-</td>
-</tr>
-</table>
 
 <h2>
   <img src="https://media.giphy.com/media/W5eoZHPpUx9sapR0eu/giphy.gif" width="35" alt="Git"> 
