@@ -20,7 +20,7 @@ const duvindu = {
     location: "Sri Lanka 🇱🇰",
     education: "ICT Undergraduate",
     currentFocus: ["Next.js", "Game Development", "AI/ML"],
-    profession: "N fr GfyRfs", // Hint: 🔑 = <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="35"> 
+    profession: "N%fr%GfyRfs", // Hint: 🔑 = <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="35"> 
     funFact: "I have beaten IGI 1 twice! 🧊",
     lifePhilosophy: "Code, Create, Conquer, Repeat 🔄"
 };
