@@ -20,7 +20,7 @@ const duvindu = {
     location: "Sri Lanka 🇱🇰",
     education: "ICT Undergraduate",
     currentFocus: ["Next.js", "Game Development", "AI/ML"],
-    profession: "N%fr%GfyRfs", // Hint: 🔑 = <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="35"> 
+    profession: "N%fr%GfyRfs", // Hint: 🔑 = <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="35" - 1> 
     funFact: "I have beaten IGI 1 twice! 🧊",
     lifePhilosophy: "Code, Create, Conquer, Repeat 🔄"
 };
@@ -34,8 +34,8 @@ const duvindu = {
 - 🎯 Goal: Build solutions that make a difference
 
 <h2>
-  <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="35"> 
-  Tech Arsenal 
+  <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="35">
+  Tech Arsenal
 </h2>
 
 <h3>Languages</h3>
@@ -44,6 +44,7 @@ const duvindu = {
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
   <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
   <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP">
+  <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white" alt="C">
 </p>
 
 <h3>Frontend</h3>
@@ -61,6 +62,11 @@ const duvindu = {
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js">
   <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel">
   <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express">
+</p>
+
+<h3>Game Development</h3>
+<p>
+  <img src="https://img.shields.io/badge/raylib-000000?style=for-the-badge&logo=raylib&logoColor=white" alt="raylib">
 </p>
 
 <h3>Database & Tools</h3>
