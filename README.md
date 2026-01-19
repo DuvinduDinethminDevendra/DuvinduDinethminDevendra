@@ -143,7 +143,7 @@ const duvindu = {
   <img src="https://komarev.com/ghpvc/?username=DuvinduDinethminDevendra&label=Profile%20Views&color=36BCF7&style=for-the-badge" alt="Profile Views" />
 </p>
 
-<h3 align="center">💭 Random Dev Quote</h3>
+<h3 align="center">💭 Random Dev Quote </h3>
 
 <p align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random Dev Quote"/>
